@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Lecturer</title>
+  <meta name="description" content="Personal webpage of Your Name, Lecturer." />
+  <style>
+    :root { --max: 920px; --pad: 20px; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; color: #111; line-height: 1.6; }
+    header { padding: 56px var(--pad) 24px; background: #f6f7f9; border-bottom: 1px solid #e6e8ee; }
+    main { max-width: var(--max); margin: 0 auto; padding: 28px var(--pad) 64px; }
+    h1 { margin: 0 0 8px; font-size: 2rem; }
+    .subtitle { margin: 0; color: #444; }
+    nav { margin-top: 18px; display: flex; gap: 14px; flex-wrap: wrap; }
+    nav a { color: #0b57d0; text-decoration: none; padding: 6px 10px; border-radius: 999px; background: #fff; border: 1px solid #e6e8ee; }
+    nav a:hover { background: #eef3ff; }
+    section { padding: 26px 0; border-bottom: 1px solid #eee; }
+    section:last-child { border-bottom: 0; }
+    h2 { margin: 0 0 10px; font-size: 1.25rem; }
+    ul { padding-left: 18px; margin: 10px 0 0; }
+    .grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 18px; }
+    .card { border: 1px solid #eee; border-radius: 14px; padding: 16px; background: #fff; }
+    .muted { color: #555; }
+    .pill { display: inline-block; padding: 4px 10px; border-radius: 999px; border: 1px solid #eee; background: #fafafa; margin: 4px 6px 0 0; font-size: 0.9rem; }
+    footer { margin-top: 34px; color: #666; font-size: 0.95rem; }
+    @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } header { padding-top: 40px; } }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div style="max-width: 920px; margin: 0 auto; padding: 0 20px;">
+      <h1>Your Name</h1>
+      <p class="subtitle">Lecturer in [Your Field] — [Your University]</p>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <div class="grid">
+        <div class="card">
+          <p>
+            I am a lecturer at <strong>[University]</strong>. My research interests include
+            <span class="pill">[Topic 1]</span>
+            <span class="pill">[Topic 2]</span>
+            <span class="pill">[Topic 3]</span>.
+          </p>
+          <p class="muted">
+            Add 3–5 sentences here: your role, your focus, what students/researchers can find on this site.
+          </p>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 10px; font-size:1.05rem;">Quick links</h3>
+          <ul>
+            <li><a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a></li>
+            <li><a href="https://orcid.org/" target="_blank" rel="noopener">ORCID</a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <div class="card">
+        <p><strong>Spring 2026</strong></p>
+        <ul>
+          <li><strong>Course A:</strong> [Course title] — <a href="#">Syllabus</a> — <a href="#">Materials</a></li>
+          <li><strong>Course B:</strong> [Course title] — <a href="#">Syllabus</a> — <a href="#">Materials</a></li>
+        </ul>
+        <p class="muted" style="margin-top:12px;">
+          Office hours: [day/time] · Location/Zoom: [details]
+        </p>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <div class="card">
+        <ul>
+          <li>
+            <strong>Paper title</strong> (Year). Journal/Conference.
+            <a href="#">PDF</a> · <a href="#">DOI</a>
+          </li>
+          <li>
+            <strong>Paper title</strong> (Year). Journal/Conference.
+            <a href="#">PDF</a> · <a href="#">DOI</a>
+          </li>
+        </ul>
+        <p class="muted" style="margin-top:12px;">Tip: keep formatting consistent (APA/Chicago/IEEE).</p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="card">
+        <ul>
+          <li><strong>Project name:</strong> one-line description. <a href="#">Link</a></li>
+          <li><strong>Project name:</strong> one-line description. <a href="#">Link</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:you@university.edu">you@university.edu</a></p>
+        <p class="muted">Optional: department address / office room / preferred contact method.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© <span id="y"></span> Your Name · Built with plain HTML</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
